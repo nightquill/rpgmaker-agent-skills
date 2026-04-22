@@ -1,0 +1,35 @@
+[
+  null,
+  {
+    "id": 1,
+    "name": "Hero",
+    "nickname": "",
+    "classId": 1,
+    "initialLevel": 1,
+    "maxLevel": 99,
+    "profile": "A brave warrior from the village.",
+    "characterName": "Actor1",
+    "characterIndex": 0,
+    "faceName": "Actor1",
+    "faceIndex": 0,
+    "equips": [1, 1, 0, 0, 0],
+    "traits": [],
+    "note": ""
+  },
+  {
+    "id": 2,
+    "name": "Mage",
+    "nickname": "",
+    "classId": 2,
+    "initialLevel": 1,
+    "maxLevel": 99,
+    "profile": "A scholarly mage seeking knowledge.",
+    "characterName": "Actor2",
+    "characterIndex": 0,
+    "faceName": "Actor2",
+    "faceIndex": 0,
+    "equips": [0, 0, 0, 0, 0],
+    "traits": [],
+    "note": ""
+  }
+]

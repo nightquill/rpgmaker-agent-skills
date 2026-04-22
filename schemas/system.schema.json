@@ -1,0 +1,50 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "RPG Maker MV System",
+  "description": "Schema for System.json - a single object (not a positional array)",
+  "type": "object",
+  "required": ["gameTitle"],
+  "additionalProperties": true,
+  "properties": {
+    "gameTitle": { "type": "string" },
+    "versionId": { "type": "integer" },
+    "locale": { "type": "string" },
+    "partyMembers": {
+      "type": "array",
+      "items": { "type": "integer" }
+    },
+    "elements": {
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "equipTypes": {
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "skillTypes": {
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "weaponTypes": {
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "armorTypes": {
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "switches": {
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "variables": {
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "currencyUnit": { "type": "string" },
+    "windowTone": {
+      "type": "array",
+      "items": { "type": "number" }
+    }
+  }
+}

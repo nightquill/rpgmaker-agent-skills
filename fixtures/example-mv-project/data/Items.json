@@ -1,0 +1,51 @@
+[
+  null,
+  {
+    "id": 1,
+    "name": "Potion",
+    "iconIndex": 32,
+    "description": "Restores 200 HP.",
+    "itypeId": 1,
+    "scope": 7,
+    "occasion": 0,
+    "consumable": true,
+    "price": 50,
+    "animationId": 0,
+    "effects": [
+      {"code": 11, "dataId": 0, "value1": 0, "value2": 200}
+    ],
+    "note": ""
+  },
+  {
+    "id": 2,
+    "name": "Ether",
+    "iconIndex": 33,
+    "description": "Restores 50 MP.",
+    "itypeId": 1,
+    "scope": 7,
+    "occasion": 0,
+    "consumable": true,
+    "price": 100,
+    "animationId": 0,
+    "effects": [
+      {"code": 12, "dataId": 0, "value1": 0, "value2": 50}
+    ],
+    "note": ""
+  },
+  {
+    "id": 3,
+    "name": "Antidote",
+    "iconIndex": 34,
+    "description": "Cures poison.",
+    "itypeId": 1,
+    "scope": 7,
+    "occasion": 0,
+    "consumable": true,
+    "price": 30,
+    "animationId": 0,
+    "effects": [
+      {"code": 22, "dataId": 1, "value1": 0, "value2": 0}
+    ],
+    "note": ""
+  }
+]

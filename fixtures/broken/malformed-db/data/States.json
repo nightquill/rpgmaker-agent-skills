@@ -1,0 +1,27 @@
+[
+  null,
+  {
+    "id": 1,
+    "name": "Knockout",
+    "iconIndex": 1,
+    "restriction": 4,
+    "priority": 100,
+    "removeAtBattleEnd": false,
+    "removeByDamage": false,
+    "removeByRestriction": false,
+    "removeByWalking": false,
+    "autoRemovalTiming": 0,
+    "minTurns": 0,
+    "maxTurns": 0,
+    "stepsToRemove": 0,
+    "chanceByDamage": 0,
+    "message1": "%1 is knocked out!",
+    "message2": "%1 recovered!",
+    "message3": "",
+    "message4": "",
+    "motion": 3,
+    "overlay": 0,
+    "traits": [],
+    "note": ""
+  }
+]

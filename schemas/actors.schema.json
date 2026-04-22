@@ -1,0 +1,38 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "RPG Maker MV Actors",
+  "description": "Schema for Actors.json - a positional array where index 0 is null",
+  "type": "array",
+  "items": {
+    "oneOf": [
+      { "type": "null" },
+      { "$ref": "#/$defs/actorEntry" }
+    ]
+  },
+  "$defs": {
+    "actorEntry": {
+      "type": "object",
+      "required": ["id", "name"],
+      "additionalProperties": true,
+      "properties": {
+        "id": { "type": "integer" },
+        "name": { "type": "string" },
+        "nickname": { "type": "string" },
+        "classId": { "type": "integer" },
+        "initialLevel": { "type": "integer" },
+        "maxLevel": { "type": "integer" },
+        "profile": { "type": "string" },
+        "characterName": { "type": "string" },
+        "characterIndex": { "type": "integer" },
+        "faceName": { "type": "string" },
+        "faceIndex": { "type": "integer" },
+        "equips": {
+          "type": "array",
+          "items": { "type": "integer" }
+        },
+        "traits": { "type": "array" },
+        "note": { "type": "string" }
+      }
+    }
+  }
+}

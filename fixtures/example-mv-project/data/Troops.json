@@ -1,0 +1,21 @@
+[
+  null,
+  {
+    "id": 1,
+    "name": "Slime*2",
+    "members": [
+      {"enemyId": 1, "x": 400, "y": 400},
+      {"enemyId": 1, "x": 500, "y": 400}
+    ],
+    "pages": []
+  },
+  {
+    "id": 2,
+    "name": "Goblin, Bat",
+    "members": [
+      {"enemyId": 3, "x": 400, "y": 400},
+      {"enemyId": 2, "x": 500, "y": 400}
+    ],
+    "pages": []
+  }
+]

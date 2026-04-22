@@ -1,0 +1,26 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "RPG Maker MV MapInfos",
+  "description": "Schema for MapInfos.json - a positional array where index 0 is null",
+  "type": "array",
+  "items": {
+    "oneOf": [
+      { "type": "null" },
+      { "$ref": "#/$defs/mapInfoEntry" }
+    ]
+  },
+  "$defs": {
+    "mapInfoEntry": {
+      "type": "object",
+      "required": ["id", "name"],
+      "additionalProperties": true,
+      "properties": {
+        "id": { "type": "integer" },
+        "name": { "type": "string" },
+        "expanded": { "type": "boolean" },
+        "order": { "type": "integer" },
+        "parentId": { "type": "integer" }
+      }
+    }
+  }
+}

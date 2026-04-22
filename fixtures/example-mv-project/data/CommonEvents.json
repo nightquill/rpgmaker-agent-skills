@@ -1,0 +1,39 @@
+[
+  null,
+  {
+    "id": 1,
+    "name": "Innkeeper Dialog",
+    "trigger": 0,
+    "switchId": 0,
+    "list": [
+      {"code": 101, "indent": 0, "parameters": ["Actor1", 0, 0, 2]},
+      {"code": 401, "indent": 0, "parameters": ["Welcome to the village inn!"]},
+      {"code": 401, "indent": 0, "parameters": ["Would you like to rest? It's 50 gold."]},
+      {"code": 102, "indent": 0, "parameters": [["Yes", "No"], 1, 0, 2, 0]},
+      {"code": 402, "indent": 1, "parameters": [0, "Yes"]},
+      {"code": 125, "indent": 2, "parameters": [1, 0, 50]},
+      {"code": 311, "indent": 2, "parameters": [0, 0]},
+      {"code": 312, "indent": 2, "parameters": [0, 0]},
+      {"code": 101, "indent": 2, "parameters": ["Actor1", 0, 0, 2]},
+      {"code": 401, "indent": 2, "parameters": ["Sweet dreams!"]},
+      {"code": 402, "indent": 1, "parameters": [1, "No"]},
+      {"code": 101, "indent": 2, "parameters": ["Actor1", 0, 0, 2]},
+      {"code": 401, "indent": 2, "parameters": ["Come back anytime."]},
+      {"code": 404, "indent": 1, "parameters": []},
+      {"code": 0, "indent": 0, "parameters": []}
+    ]
+  },
+  {
+    "id": 2,
+    "name": "Quest Start",
+    "trigger": 0,
+    "switchId": 0,
+    "list": [
+      {"code": 101, "indent": 0, "parameters": ["Actor1", 0, 0, 2]},
+      {"code": 401, "indent": 0, "parameters": ["The cave to the east has been overrun by monsters."]},
+      {"code": 401, "indent": 0, "parameters": ["Please, \\N[1], you must help us!"]},
+      {"code": 121, "indent": 0, "parameters": [1, 1, 0]},
+      {"code": 0, "indent": 0, "parameters": []}
+    ]
+  }
+]

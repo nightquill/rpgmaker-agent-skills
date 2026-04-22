@@ -1,0 +1,30 @@
+[
+  null,
+  {
+    "id": 1,
+    "expanded": false,
+    "name": "Village",
+    "order": 1,
+    "parentId": 0,
+    "scrollX": 0,
+    "scrollY": 0
+  },
+  {
+    "id": 2,
+    "expanded": false,
+    "name": "Cave Entrance",
+    "order": 2,
+    "parentId": 0,
+    "scrollX": 0,
+    "scrollY": 0
+  },
+  {
+    "id": 3,
+    "expanded": false,
+    "name": "Cave Interior",
+    "order": 3,
+    "parentId": 0,
+    "scrollX": 0,
+    "scrollY": 0
+  }
+]

@@ -1,0 +1,6 @@
+[
+  null,
+  {"id": 1, "name": "Potion", "description": "Restores 500 HP.", "iconIndex": 176, "price": 50, "consumable": true, "effects": [], "note": ""},
+  {"id": 2, "name": "Ether", "description": "Restores 50 MP.", "iconIndex": 177, "price": 100, "consumable": true, "effects": [], "note": ""},
+  {"id": 3, "name": "Antidote", "description": "Cures poison.", "iconIndex": 178, "price": 30, "consumable": true, "effects": [], "note": ""}
+]

@@ -1,0 +1,12 @@
+[
+  null,
+  {
+    "id": 1,
+    "name": "Empty Event",
+    "trigger": 0,
+    "switchId": 0,
+    "list": [
+      {"code": 0, "indent": 0, "parameters": []}
+    ]
+  }
+]

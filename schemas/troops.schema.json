@@ -1,0 +1,36 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "RPG Maker MV Troops",
+  "description": "Schema for Troops.json - a positional array where index 0 is null",
+  "type": "array",
+  "items": {
+    "oneOf": [
+      { "type": "null" },
+      { "$ref": "#/$defs/troopEntry" }
+    ]
+  },
+  "$defs": {
+    "troopEntry": {
+      "type": "object",
+      "required": ["id", "name"],
+      "additionalProperties": true,
+      "properties": {
+        "id": { "type": "integer" },
+        "name": { "type": "string" },
+        "members": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "additionalProperties": true,
+            "properties": {
+              "enemyId": { "type": "integer" },
+              "x": { "type": "integer" },
+              "y": { "type": "integer" }
+            }
+          }
+        },
+        "pages": { "type": "array" }
+      }
+    }
+  }
+}

@@ -1,0 +1,31 @@
+[
+  null,
+  {
+    "id": 1,
+    "name": "Hero",
+    "faceName": "Actor1",
+    "faceIndex": 0,
+    "classId": 1,
+    "initialLevel": 1,
+    "maxLevel": 99,
+    "note": "",
+    "profile": "",
+    "nickname": "",
+    "traits": [],
+    "equips": [0, 0, 0, 0, 0]
+  },
+  {
+    "id": 2,
+    "name": "Mage",
+    "faceName": "Actor2",
+    "faceIndex": 0,
+    "classId": 2,
+    "initialLevel": 1,
+    "maxLevel": 99,
+    "note": "",
+    "profile": "",
+    "nickname": "",
+    "traits": [],
+    "equips": [0, 0, 0, 0, 0]
+  }
+]

@@ -1,0 +1,48 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "RPG Maker MV Classes",
+  "description": "Schema for Classes.json - a positional array where index 0 is null",
+  "type": "array",
+  "items": {
+    "oneOf": [
+      { "type": "null" },
+      { "$ref": "#/$defs/classEntry" }
+    ]
+  },
+  "$defs": {
+    "classEntry": {
+      "type": "object",
+      "required": ["id", "name"],
+      "additionalProperties": true,
+      "properties": {
+        "id": { "type": "integer" },
+        "name": { "type": "string" },
+        "expParams": {
+          "type": "array",
+          "items": { "type": "number" }
+        },
+        "params": {
+          "type": "array",
+          "items": {
+            "type": "array",
+            "items": { "type": "number" }
+          }
+        },
+        "traits": { "type": "array" },
+        "learnings": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "additionalProperties": true,
+            "properties": {
+              "level": { "type": "integer" },
+              "skillId": { "type": "integer" },
+              "note": { "type": "string" }
+            }
+          }
+        },
+        "note": { "type": "string" }
+      }
+    }
+  }
+}

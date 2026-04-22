@@ -1,0 +1,67 @@
+[
+  null,
+  {
+    "id": 1,
+    "name": "Slime",
+    "battlerName": "Slime",
+    "battlerHue": 0,
+    "params": [50, 0, 8, 8, 8, 8, 8, 8],
+    "exp": 5,
+    "gold": 3,
+    "dropItems": [
+      {"dataId": 1, "denominator": 8, "kind": 1}
+    ],
+    "actions": [
+      {"conditionParam1": 0, "conditionParam2": 0, "conditionType": 0, "rating": 5, "skillId": 1}
+    ],
+    "traits": [],
+    "note": ""
+  },
+  {
+    "id": 2,
+    "name": "Bat",
+    "battlerName": "Bat",
+    "battlerHue": 0,
+    "params": [40, 0, 10, 6, 6, 6, 12, 6],
+    "exp": 7,
+    "gold": 4,
+    "dropItems": [],
+    "actions": [
+      {"conditionParam1": 0, "conditionParam2": 0, "conditionType": 0, "rating": 5, "skillId": 1}
+    ],
+    "traits": [],
+    "note": ""
+  },
+  {
+    "id": 3,
+    "name": "Goblin",
+    "battlerName": "Goblin",
+    "battlerHue": 0,
+    "params": [80, 0, 14, 10, 6, 6, 10, 6],
+    "exp": 12,
+    "gold": 8,
+    "dropItems": [
+      {"dataId": 3, "denominator": 4, "kind": 1}
+    ],
+    "actions": [
+      {"conditionParam1": 0, "conditionParam2": 0, "conditionType": 0, "rating": 5, "skillId": 1}
+    ],
+    "traits": [],
+    "note": ""
+  },
+  {
+    "id": 4,
+    "name": "Immortal Snail",
+    "battlerName": "Slime",
+    "battlerHue": 0,
+    "params": [50000, 0, 10, 8, 8, 8, 8, 8],
+    "exp": 5,
+    "gold": 1,
+    "dropItems": [],
+    "actions": [
+      {"conditionParam1": 0, "conditionParam2": 0, "conditionType": 0, "rating": 5, "skillId": 1}
+    ],
+    "traits": [],
+    "note": ""
+  }
+]

@@ -1,0 +1,10 @@
+[
+  null,
+  {
+    "id": 1,
+    "name": "World",
+    "mode": 1,
+    "tilesetNames": ["", "", "", "", "", "", "", "", ""],
+    "flags": []
+  }
+]

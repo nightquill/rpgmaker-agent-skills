@@ -1,0 +1,39 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "RPG Maker MV States",
+  "description": "Schema for States.json - a positional array where index 0 is null",
+  "type": "array",
+  "items": {
+    "oneOf": [
+      { "type": "null" },
+      { "$ref": "#/$defs/stateEntry" }
+    ]
+  },
+  "$defs": {
+    "stateEntry": {
+      "type": "object",
+      "required": ["id", "name"],
+      "additionalProperties": true,
+      "properties": {
+        "id": { "type": "integer" },
+        "name": { "type": "string" },
+        "iconIndex": { "type": "integer" },
+        "restriction": { "type": "integer" },
+        "priority": { "type": "integer" },
+        "removeAtBattleEnd": { "type": "boolean" },
+        "removeByDamage": { "type": "boolean" },
+        "autoRemovalTiming": { "type": "integer" },
+        "minTurns": { "type": "integer" },
+        "maxTurns": { "type": "integer" },
+        "message1": { "type": "string" },
+        "message2": { "type": "string" },
+        "message3": { "type": "string" },
+        "message4": { "type": "string" },
+        "motion": { "type": "integer" },
+        "overlay": { "type": "integer" },
+        "traits": { "type": "array" },
+        "note": { "type": "string" }
+      }
+    }
+  }
+}

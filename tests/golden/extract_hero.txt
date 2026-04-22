@@ -1,0 +1,8 @@
+[CommonEvent:1:Innkeeper Dialog] Welcome to the village inn!
+[CommonEvent:1:Innkeeper Dialog] Would you like to rest? It's 50 gold.
+[CommonEvent:1:Innkeeper Dialog] Sweet dreams!
+[CommonEvent:1:Innkeeper Dialog] Come back anytime.
+[CommonEvent:2:Quest Start] The cave to the east has been overrun by monsters.
+[CommonEvent:2:Quest Start] Please, \N[1], you must help us!
+[Map001.json:Event1:Innkeeper:Page0] Hello traveler! Welcome to our village.
+[Map001.json:Event1:Innkeeper:Page0] Be careful if you head to the cave.

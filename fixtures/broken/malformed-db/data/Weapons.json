@@ -1,0 +1,27 @@
+[
+  null,
+  {
+    "id": 1,
+    "name": "Short Sword",
+    "iconIndex": 97,
+    "description": "A basic sword.",
+    "wtypeId": 1,
+    "params": [0, 0, 10, 0, 0, 0, 0, 0],
+    "price": 100,
+    "animationId": 6,
+    "traits": [],
+    "note": ""
+  },
+  {
+    "id": 2,
+    "name": "Staff",
+    "iconIndex": 101,
+    "description": "A wooden staff.",
+    "wtypeId": 5,
+    "params": [0, 0, 0, 0, 10, 5, 0, 0],
+    "price": 80,
+    "animationId": 1,
+    "traits": [],
+    "note": ""
+  }
+]

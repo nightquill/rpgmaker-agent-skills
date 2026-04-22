@@ -1,0 +1,13 @@
+[
+  null,
+  {
+    "id": 1,
+    "name": "Broken Item Ref",
+    "trigger": 0,
+    "switchId": 0,
+    "list": [
+      {"code": 126, "indent": 0, "parameters": [99, 0, 0, 1]},
+      {"code": 0, "indent": 0, "parameters": []}
+    ]
+  }
+]

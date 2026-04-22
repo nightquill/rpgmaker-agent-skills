@@ -1,0 +1,51 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "RPG Maker MV Skills",
+  "description": "Schema for Skills.json - a positional array where index 0 is null",
+  "type": "array",
+  "items": {
+    "oneOf": [
+      { "type": "null" },
+      { "$ref": "#/$defs/skillEntry" }
+    ]
+  },
+  "$defs": {
+    "skillEntry": {
+      "type": "object",
+      "required": ["id", "name"],
+      "additionalProperties": true,
+      "properties": {
+        "id": { "type": "integer" },
+        "name": { "type": "string" },
+        "iconIndex": { "type": "integer" },
+        "description": { "type": "string" },
+        "stypeId": { "type": "integer" },
+        "scope": { "type": "integer" },
+        "occasion": { "type": "integer" },
+        "speed": { "type": "integer" },
+        "successRate": { "type": "integer" },
+        "repeats": { "type": "integer" },
+        "tpGain": { "type": "integer" },
+        "hitType": { "type": "integer" },
+        "animationId": { "type": "integer" },
+        "damage": {
+          "type": "object",
+          "additionalProperties": true,
+          "properties": {
+            "type": { "type": "integer" },
+            "elementId": { "type": "integer" },
+            "formula": { "type": "string" },
+            "variance": { "type": "integer" },
+            "critical": { "type": "boolean" }
+          }
+        },
+        "effects": { "type": "array" },
+        "mpCost": { "type": "integer" },
+        "tpCost": { "type": "integer" },
+        "message1": { "type": "string" },
+        "message2": { "type": "string" },
+        "note": { "type": "string" }
+      }
+    }
+  }
+}

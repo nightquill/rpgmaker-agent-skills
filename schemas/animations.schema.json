@@ -1,0 +1,30 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "RPG Maker MV Animations",
+  "description": "Schema for Animations.json - a positional array where index 0 is null",
+  "type": "array",
+  "items": {
+    "oneOf": [
+      { "type": "null" },
+      { "$ref": "#/$defs/animationEntry" }
+    ]
+  },
+  "$defs": {
+    "animationEntry": {
+      "type": "object",
+      "required": ["id", "name"],
+      "additionalProperties": true,
+      "properties": {
+        "id": { "type": "integer" },
+        "name": { "type": "string" },
+        "animation1Name": { "type": "string" },
+        "animation1Hue": { "type": "integer" },
+        "animation2Name": { "type": "string" },
+        "animation2Hue": { "type": "integer" },
+        "position": { "type": "integer" },
+        "frames": { "type": "array" },
+        "timings": { "type": "array" }
+      }
+    }
+  }
+}

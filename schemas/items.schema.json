@@ -1,0 +1,33 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "RPG Maker MV Items",
+  "description": "Schema for Items.json - a positional array where index 0 is null",
+  "type": "array",
+  "items": {
+    "oneOf": [
+      { "type": "null" },
+      { "$ref": "#/$defs/itemEntry" }
+    ]
+  },
+  "$defs": {
+    "itemEntry": {
+      "type": "object",
+      "required": ["id", "name"],
+      "additionalProperties": true,
+      "properties": {
+        "id": { "type": "integer" },
+        "name": { "type": "string" },
+        "iconIndex": { "type": "integer" },
+        "description": { "type": "string" },
+        "itypeId": { "type": "integer" },
+        "scope": { "type": "integer" },
+        "occasion": { "type": "integer" },
+        "consumable": { "type": "boolean" },
+        "price": { "type": "integer" },
+        "animationId": { "type": "integer" },
+        "effects": { "type": "array" },
+        "note": { "type": "string" }
+      }
+    }
+  }
+}

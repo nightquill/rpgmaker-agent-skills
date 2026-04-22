@@ -1,0 +1,15 @@
+[
+  null,
+  {
+    "id": 1,
+    "name": "Broken Dialog",
+    "trigger": 0,
+    "switchId": 0,
+    "list": [
+      {"code": 101, "indent": 0, "parameters": ["Actor1", 0, 0, 2]},
+      {"code": 401, "indent": 0, "parameters": ["Hello \\N[99], this actor does not exist."]},
+      {"code": 401, "indent": 0, "parameters": ["Take this \\I[999] as a gift."]},
+      {"code": 0, "indent": 0, "parameters": []}
+    ]
+  }
+]

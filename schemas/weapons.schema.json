@@ -1,0 +1,34 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "RPG Maker MV Weapons",
+  "description": "Schema for Weapons.json - a positional array where index 0 is null",
+  "type": "array",
+  "items": {
+    "oneOf": [
+      { "type": "null" },
+      { "$ref": "#/$defs/weaponEntry" }
+    ]
+  },
+  "$defs": {
+    "weaponEntry": {
+      "type": "object",
+      "required": ["id", "name"],
+      "additionalProperties": true,
+      "properties": {
+        "id": { "type": "integer" },
+        "name": { "type": "string" },
+        "iconIndex": { "type": "integer" },
+        "description": { "type": "string" },
+        "wtypeId": { "type": "integer" },
+        "params": {
+          "type": "array",
+          "items": { "type": "integer" }
+        },
+        "price": { "type": "integer" },
+        "animationId": { "type": "integer" },
+        "traits": { "type": "array" },
+        "note": { "type": "string" }
+      }
+    }
+  }
+}

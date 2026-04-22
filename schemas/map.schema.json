@@ -1,0 +1,65 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "RPG Maker MV Map",
+  "description": "Schema for MapXXX.json - a single map object",
+  "type": "object",
+  "required": ["width", "height", "data", "events"],
+  "additionalProperties": true,
+  "properties": {
+    "autoplayBgm": { "type": "boolean" },
+    "autoplayBgs": { "type": "boolean" },
+    "bgm": {
+      "type": "object",
+      "additionalProperties": true
+    },
+    "bgs": {
+      "type": "object",
+      "additionalProperties": true
+    },
+    "disableDashing": { "type": "boolean" },
+    "displayName": { "type": "string" },
+    "encounterList": { "type": "array" },
+    "encounterStep": { "type": "integer" },
+    "height": { "type": "integer" },
+    "width": { "type": "integer" },
+    "note": { "type": "string" },
+    "parallaxName": { "type": "string" },
+    "scrollType": { "type": "integer" },
+    "specifyBattleback": { "type": "boolean" },
+    "tilesetId": { "type": "integer" },
+    "data": {
+      "type": "array",
+      "items": { "type": "integer" }
+    },
+    "events": {
+      "type": "array",
+      "items": {
+        "oneOf": [
+          { "type": "null" },
+          { "$ref": "#/$defs/mapEvent" }
+        ]
+      }
+    }
+  },
+  "$defs": {
+    "mapEvent": {
+      "type": "object",
+      "required": ["id", "name", "x", "y", "pages"],
+      "additionalProperties": true,
+      "properties": {
+        "id": { "type": "integer" },
+        "name": { "type": "string" },
+        "note": { "type": "string" },
+        "x": { "type": "integer" },
+        "y": { "type": "integer" },
+        "pages": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "additionalProperties": true
+          }
+        }
+      }
+    }
+  }
+}
